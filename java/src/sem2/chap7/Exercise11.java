@@ -1,7 +1,9 @@
+package sem2.chap7;
+
 /**
- * Created by robert on 1/23/17.
+ * Lets say this class name is ArrayOperations...
  */
-public class ArrayOperations {
+public class Exercise11 {
 
     public static int getTotal(int[] arr){
 

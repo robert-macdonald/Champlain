@@ -1,16 +1,16 @@
-/**
+package sem2.chap7; /**
  * Created by robert on 1/23/17.
  */
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
-public class FileClass {
+public class Exercise12 {
 
     private String fileName;
     ArrayList<Integer> arr = new ArrayList<Integer>();
 
-    public FileClass(String fileName) throws FileNotFoundException {
+    public Exercise12(String fileName) throws FileNotFoundException {
 
         int count = 0;
         this.fileName = fileName;
@@ -62,9 +62,9 @@ public class FileClass {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter file name");
         String fileName = input.next();
-        FileClass file = null;
+        Exercise12 file = null;
         try {
-            file = new FileClass(fileName);
+            file = new Exercise12(fileName);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

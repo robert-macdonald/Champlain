@@ -1,9 +1,9 @@
-/**
+package sem2.chap7; /**
  * Created by robert on 1/23/17.
  */
 
 import java.util.Scanner;
-public class Driver {
+public class Exercise4 {
 
     public static void main(String args[]){
         Scanner input = new Scanner(System.in);
