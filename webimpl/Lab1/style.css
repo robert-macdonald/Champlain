@@ -1,0 +1,12 @@
+body{
+    background-color: cornflowerblue;
+}
+#listOne{
+    display: none;
+}
+#listTwo{
+    display: none;
+}
+a{
+    display: none;
+}
