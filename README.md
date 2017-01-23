@@ -1,1 +1,1 @@
-# Champlain
+# Champlain College class assignments
