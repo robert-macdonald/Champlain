@@ -2,12 +2,9 @@ package sem2.chap7;
 
 import java.util.Scanner;
 
-/**
- * Created by robert on 1/25/17.
- */
 public class LabExercise1 {
 
-    public static int sumDigits(long n){
+    private static int sumDigits(long n){
         int sum = 0;
         int number;
         while(n % 10 != 0){

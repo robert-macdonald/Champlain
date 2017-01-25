@@ -2,11 +2,8 @@ package sem2.chap7;
 
 import java.util.Scanner;
 
-/**
- * Created by robert on 1/25/17.
- */
 public class LabExercise4 {
-    public static String isValid(String password){
+    private static String isValid(String password){
         if (password.length() < 8) {
             return "Invalid";
         } else {

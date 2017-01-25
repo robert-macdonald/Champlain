@@ -2,12 +2,9 @@ package sem2.chap7;
 
 import java.util.Scanner;
 
-/**
- * Created by robert on 1/25/17.
- */
 public class LabExercise2 {
 
-    public static int reverse(int input) {
+    private static int reverse(int input) {
         long reversedNum = 0;
         long input_long = input;
 

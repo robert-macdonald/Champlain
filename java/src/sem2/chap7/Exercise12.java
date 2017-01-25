@@ -1,28 +1,22 @@
-package sem2.chap7; /**
- * Created by robert on 1/23/17.
- */
+package sem2.chap7;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class Exercise12 {
 
-    private String fileName;
-    ArrayList<Integer> arr = new ArrayList<Integer>();
+    private ArrayList<Integer> arr = new ArrayList<>();
 
-    public Exercise12(String fileName) throws FileNotFoundException {
-
-        int count = 0;
-        this.fileName = fileName;
-        Scanner reader = new Scanner(new File(fileName));
-        while (reader.hasNext()){
+    private Exercise12(String fileName) throws FileNotFoundException {
+        Scanner reader = new Scanner(new File("data/"+fileName));
+        while (reader.hasNext()) {
             int i = reader.nextInt();
             arr.add(i);
-            count++;
         }
     }
 
-    public int getTotal(){
+    private int getTotal(){
         int sum = 0;
         for(int i : arr) {
             sum += i;
@@ -30,7 +24,7 @@ public class Exercise12 {
         return sum;
     }
 
-    public int getAverage(){
+    private int getAverage(){
         int sum = 0;
         int avg = 0;
         for(int i : arr){
@@ -40,20 +34,20 @@ public class Exercise12 {
         return avg;
     }
 
-    public int getHighest(){
+    private int getHighest(){
         int max = arr.get(0);
-        for (int x = 0;  x < arr.size(); x++){
-            if (arr.get(x) > max)
-                max = arr.get(x);
+        for (int i : arr) {
+            if (i > max)
+                max = i;
         }
         return max;
     }
 
-    public int getLowest(){
+    private int getLowest(){
         int min = arr.get(0);
-        for (int x = 0; x < arr.size(); x++){
-            if (arr.get(x) < min)
-                min = arr.get(x);
+        for (int i : arr) {
+            if (i < min)
+                min = i;
         }
         return min;
     }
@@ -68,8 +62,10 @@ public class Exercise12 {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        System.out.println("Total: " + file.getTotal() + "\nAverage: " + file.getAverage() + "\nHighest: " +
-        file.getHighest() + "\nLowest: " + file.getLowest());
+        if (file != null) {
+            System.out.println("Total: " + file.getTotal() + "\nAverage: " + file.getAverage() + "\nHighest: " +
+            file.getHighest() + "\nLowest: " + file.getLowest());
+        }
     }
 
 }
