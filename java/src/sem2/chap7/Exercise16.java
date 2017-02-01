@@ -10,8 +10,8 @@ public class Exercise16 {
     private static int getTotal(int[][] arr) {
         int sum = 0;
         for (int[] a : arr) {
-            for (int anAnArray2d : a) {
-                sum = sum + anAnArray2d;
+            for (int b : a) {
+                sum = sum + b;
             }
         }
         return sum;
@@ -21,8 +21,8 @@ public class Exercise16 {
         int sum = 0;
         int avg;
         for (int[] a : arr) {
-            for (int anAnArray2d : a) {
-                sum = sum + anAnArray2d;
+            for (int b : a) {
+                sum = sum + b;
             }
         }
         avg = sum / (arr.length + arr[0].length);

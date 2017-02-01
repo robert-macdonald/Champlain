@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dc1de8a-747e-4d6d-9df7-3282691532f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sem2/chap7/Exercise18.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java/sem2/chap7/Exercise16.class" afterPath="$PROJECT_DIR$/out/production/java/sem2/chap7/Exercise16.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java.iws" afterPath="$PROJECT_DIR$/java.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../webimpl/Lab2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../webimpl/Lab2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../webimpl/Lab2/index.html" afterPath="$PROJECT_DIR$/../webimpl/Lab2/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../webimpl/Lab2/script.js" afterPath="$PROJECT_DIR$/../webimpl/Lab2/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sem2/chap7/Exercise16.java" afterPath="$PROJECT_DIR$/src/sem2/chap7/Exercise16.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sem2/chap7/Exercise20.java" afterPath="$PROJECT_DIR$/src/sem2/chap7/Exercise20.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,20 +23,30 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Exercise20.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Exercise20.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise20.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="46" column="5" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+            <state relative-caret-position="1116">
+              <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Exercise18.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Exercise16.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise16.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="16" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exercise18.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise18.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
+            <state relative-caret-position="522">
               <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -88,9 +95,9 @@
         <option value="$PROJECT_DIR$/src/sem2/chap7/LabExercise1.java" />
         <option value="$PROJECT_DIR$/src/sem2/chap7/LabExercise2.java" />
         <option value="$PROJECT_DIR$/src/sem2/chap7/LabExercise3.java" />
+        <option value="$PROJECT_DIR$/src/sem2/chap7/Exercise18.java" />
         <option value="$PROJECT_DIR$/src/sem2/chap7/Exercise16.java" />
         <option value="$PROJECT_DIR$/src/sem2/chap7/Exercise20.java" />
-        <option value="$PROJECT_DIR$/src/sem2/chap7/Exercise18.java" />
       </list>
     </option>
   </component>
@@ -173,7 +180,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Exercise18">
+  <component name="RunManager" selected="Application.Exercise20">
     <configuration default="false" name="LabExercise3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -663,8 +670,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Exercise18" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Exercise20" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Exercise20" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Exercise18" />
         <item index="2" class="java.lang.String" itemvalue="Application.Exercise16" />
         <item index="3" class="java.lang.String" itemvalue="Application.LabExercise4" />
         <item index="4" class="java.lang.String" itemvalue="Application.LabExercise3" />
@@ -693,7 +700,7 @@
       <workItem from="1485782255046" duration="5879000" />
       <workItem from="1485897847546" duration="5893000" />
       <workItem from="1485971274526" duration="76000" />
-      <workItem from="1485984165088" duration="4550000" />
+      <workItem from="1485984165088" duration="5768000" />
     </task>
     <task id="LOCAL-00001" summary="class work today.">
       <created>1485385618414</created>
@@ -730,15 +737,22 @@
       <option name="project" value="LOCAL" />
       <updated>1485904217940</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Exercise 18.">
+      <created>1485988785429</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1485988785430</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26342000" />
+    <option name="totallyTimeSpent" value="27560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="45" width="1920" height="1035" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -782,7 +796,8 @@
     <MESSAGE value="small fixes." />
     <MESSAGE value="Exercise 16." />
     <MESSAGE value="Exercise 20." />
-    <option name="LAST_COMMIT_MESSAGE" value="Exercise 20." />
+    <MESSAGE value="Exercise 18." />
+    <option name="LAST_COMMIT_MESSAGE" value="Exercise 18." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -835,23 +850,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise16.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="65" column="17" lean-forward="false" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise20.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="46" column="5" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="16" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise18.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
+        <state relative-caret-position="522">
           <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -864,6 +871,14 @@
             <element signature="e#592#593#0" expanded="true" />
             <element signature="e#626#627#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise20.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1116">
+          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
