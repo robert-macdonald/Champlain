@@ -1,6 +1,9 @@
 /**
  * Created by robert on 1/30/17.
  */
+/*
+Global variables.
+ */
 var playerNames = ["Russel Westbrook", "James Harden", "Lebron James"];
 var gamesPlayed = [67, 81, 69];
 var fieldGoals = [627, 647, 624];
@@ -9,13 +12,22 @@ var headerTag = document.getElementsByTagName("th");
 var descTag = document.getElementsByTagName("td");
 var tableTag = document.getElementsByTagName("table");
 
+/*
+Getting totals.
+ */
 function getTotal(index) {
-    return fieldGoals[index] + freeThrows[index];
+    return (2 *fieldGoals[index]) + freeThrows[index];
 }
+/*
+Getting Average.
+ */
 function getAverage(index) {
-    return getTotal(index) / gamesPlayed[index];
+    return (Math.round(getTotal(index) / gamesPlayed[index] * 100) / 100).toFixed(2);
 }
-function createTable() {
+/*
+Table creation.
+ */
+function makeTable() {
     document.write("<table style='100%' id='createdTable'>");
     document.write("<th>Player Name</th>");
     document.write("<th>Games Played</th>");
@@ -34,6 +46,9 @@ function createTable() {
         document.write("</tr>");
     }
     document.write("</table>");
+    /*
+    Creating table style.
+     */
     for(var h = 0; h < headerTag.length; h++){
         headerTag[h].style.border = "1px solid black";
     }

@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dc1de8a-747e-4d6d-9df7-3282691532f8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sem2/chap7/Exercise18.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/java/sem2/chap7/Exercise16.class" afterPath="$PROJECT_DIR$/out/production/java/sem2/chap7/Exercise16.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java.iws" afterPath="$PROJECT_DIR$/java.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sem2/chap7/Exercise20.java" afterPath="$PROJECT_DIR$/src/sem2/chap7/Exercise20.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../webimpl/Lab2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../webimpl/Lab2/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../webimpl/Lab2/index.html" afterPath="$PROJECT_DIR$/../webimpl/Lab2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../webimpl/Lab2/script.js" afterPath="$PROJECT_DIR$/../webimpl/Lab2/script.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,13 +25,33 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Exercise20.java" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Exercise20.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise20.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="735">
+              <caret line="46" column="5" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exercise18.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise18.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#592#593#0" expanded="true" />
+                <element signature="e#626#627#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,6 +90,7 @@
         <option value="$PROJECT_DIR$/src/sem2/chap7/LabExercise3.java" />
         <option value="$PROJECT_DIR$/src/sem2/chap7/Exercise16.java" />
         <option value="$PROJECT_DIR$/src/sem2/chap7/Exercise20.java" />
+        <option value="$PROJECT_DIR$/src/sem2/chap7/Exercise18.java" />
       </list>
     </option>
   </component>
@@ -96,6 +121,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -128,9 +154,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -148,47 +173,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Exercise16">
-    <configuration default="false" name="LabExercise1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sem2.chap7.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="sem2.chap7.LabExercise1" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="java" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="LabExercise2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="sem2.chap7.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="sem2.chap7.LabExercise2" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="java" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.Exercise18">
     <configuration default="false" name="LabExercise3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -237,6 +222,46 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="sem2.chap7.Exercise16" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="java" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Exercise20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sem2.chap7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="sem2.chap7.Exercise20" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="java" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Exercise18" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="sem2.chap7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="sem2.chap7.Exercise18" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -630,19 +655,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.LabExercise1" />
-      <item index="1" class="java.lang.String" itemvalue="Application.LabExercise2" />
-      <item index="2" class="java.lang.String" itemvalue="Application.LabExercise3" />
-      <item index="3" class="java.lang.String" itemvalue="Application.LabExercise4" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Exercise16" />
+      <item index="0" class="java.lang.String" itemvalue="Application.LabExercise3" />
+      <item index="1" class="java.lang.String" itemvalue="Application.LabExercise4" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Exercise16" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Exercise20" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Exercise18" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Exercise16" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LabExercise4" />
-        <item index="2" class="java.lang.String" itemvalue="Application.LabExercise3" />
-        <item index="3" class="java.lang.String" itemvalue="Application.LabExercise1" />
-        <item index="4" class="java.lang.String" itemvalue="Application.LabExercise2" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Exercise18" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Exercise20" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Exercise16" />
+        <item index="3" class="java.lang.String" itemvalue="Application.LabExercise4" />
+        <item index="4" class="java.lang.String" itemvalue="Application.LabExercise3" />
       </list>
     </recent_temporary>
   </component>
@@ -666,6 +691,9 @@
       <workItem from="1485380374534" duration="5826000" />
       <workItem from="1485394515932" duration="635000" />
       <workItem from="1485782255046" duration="5879000" />
+      <workItem from="1485897847546" duration="5893000" />
+      <workItem from="1485971274526" duration="76000" />
+      <workItem from="1485984165088" duration="4550000" />
     </task>
     <task id="LOCAL-00001" summary="class work today.">
       <created>1485385618414</created>
@@ -695,11 +723,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485787833955</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Exercise 20.">
+      <created>1485904217940</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1485904217940</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15823000" />
+    <option name="totallyTimeSpent" value="26342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="45" width="1920" height="1035" extended-state="6" />
@@ -715,7 +750,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.50285715" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.49714285" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -746,7 +781,8 @@
     <MESSAGE value="class work today." />
     <MESSAGE value="small fixes." />
     <MESSAGE value="Exercise 16." />
-    <option name="LAST_COMMIT_MESSAGE" value="Exercise 16." />
+    <MESSAGE value="Exercise 20." />
+    <option name="LAST_COMMIT_MESSAGE" value="Exercise 20." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -757,19 +793,77 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise20.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise16.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        <state relative-caret-position="1170">
+          <caret line="65" column="17" lean-forward="false" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise20.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise16.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="65" column="17" lean-forward="true" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise20.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise16.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="65" column="17" lean-forward="false" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise20.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="46" column="5" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sem2/chap7/Exercise18.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
