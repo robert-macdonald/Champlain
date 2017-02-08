@@ -20,14 +20,18 @@
             <form>
                 <h1>Ticket Prices</h1>
                 <p>Age group:</p>
-                <input type="radio" name="age" value="5" onclick="ageGroup()">0-5</input>
-                <input type="radio" name="age" value="student" onclick="ageGroup()">Student</input>
-                <input type="radio" name="age" value="18" onclick="ageGroup()">18-64</input>
-                <input type="radio" name="age" value="65" onclick="ageGroup()">65+</input>
+                <input type="checkbox" name="age" value="5" onclick="ageGroup()">0-5</input>
+                <input type="number" name="amount" class="tickets"><br>
+                <input type="checkbox" name="age" value="student" onclick="ageGroup()">Student</input>
+                <input type="number" name="amount" class="tickets"><br>
+                <input type="checkbox" name="age" value="18" onclick="ageGroup()">18-64</input>
+                <input type="number" name="amount" class="tickets"><br>
+                <input type="checkbox" name="age" value="65" onclick="ageGroup()">65+</input>
+                <input type="number" name="amount" class="tickets">
                 <p>Time of Day</p>
                 <input type="radio" name="time" value="full" onclick="getTicketPrice()">Full Day<br>
                 <input type="radio" name="time" value="morning" onclick="getTicketPrice()">Morning before 12:30<br>
-                <input type="radio" name="time" value="afternoon" onclick="getTicketPrice()">After Noon<br>
+                <input type="radio" name="time" value="afternoon" onclick="getTicketPrice()">After Noon<br><br>
                 <input type="button" value="Submit" onclick="getTotal()">
                 <p id="total"></p>
             </form>

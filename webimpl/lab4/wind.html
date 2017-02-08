@@ -21,10 +21,11 @@
             <h1>Windchill Calculator</h1>
             <form>
                 <p>Outside temp</p>
-                <input type="number" id="temp" value="5">
+                <input type="number" id="temp" value="0">
                 <p>Wind speed</p>
-                <input type="number" id="wind" value="10"><br><br>
+                <input type="number" id="wind" value="0"><br><br>
                 <input type="button" value="Calculate" onclick="document.getElementById('windChill').innerHTML = 'Wind chill: ' + getWindChill();">
+                <input type="button" value="Reset" onclick="document.getElementById('windChill').innerHTML = '';resetWind()">
                 <p id="windChill"></p>
             </form>
         </div>

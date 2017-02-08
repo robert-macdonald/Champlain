@@ -17,24 +17,27 @@ var priceF = 0;
 
 function ageGroup() {
     var age = document.getElementsByName("age");
+    var amount = document.getElementsByName("amount");
     for(var i = 0; i < age.length; i++){
         if(age[i].checked){
             if(age[i].value == "student"){
-                priceM = morningS;
-                priceA = afternoonS;
-                priceF = fullDayS;
-            } else if (age[i].value == "18"){
-                priceM = morning;
-                priceA = afternoon;
-                priceF = fullDay;
-            } else if (age[i].value == "65"){
-                priceM = morningS;
-                priceA = afternoonS;
-                priceF = fullDayS;
+                priceM = (morningS * amount[i].value);
+                priceA = (afternoonS * amount[i].value);
+                priceF = (fullDayS * amount[i].value);
+            }
+            if (age[i].value == "18"){
+                priceM = (morning * amount[i].value);
+                priceA = (afternoon * amount[i].value);
+                priceF = (fullDay * amount[i].value);
+            }
+            if (age[i].value == "65"){
+                priceM = (morningS * amount[i].value);
+                priceA = (afternoonS * amount[i].value);
+                priceF = (fullDayS * amount[i].value);
             } else {
-                priceM = 0;
-                priceA = 0;
-                priceF = 0;
+                priceM = 5;
+                priceA = 5;
+                priceF = 5;
             }
         }
     }
@@ -60,4 +63,8 @@ function getWindChill() {
     var temp = document.getElementById("temp").value;
     var windSpeed = document.getElementById("wind").value;
     return temp - (1.5 * windSpeed);
+}
+function resetWind() {
+    document.getElementById("temp").value = "0";
+    document.getElementById("wind").value = "0";
 }
