@@ -40,12 +40,12 @@ public class Exercise20 {
                 int num = arr[row][col];
                 for (int otherCol = col + 1; otherCol < arr.length; otherCol++) {
                     if (num == arr[row][otherCol]) {
-                        return false;
+                        return true;
                     }
                 }
             }
         }
-        return true;
+        return false;
     }
 
     private static boolean isMagicSquare(int[][] arr) {

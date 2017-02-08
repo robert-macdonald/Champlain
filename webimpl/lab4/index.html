@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <img src="PinePeakslogo.jpg">
+    </header>
+    <main>
+        <nav>
+            <a href="index.html">Home</a><br>
+            <a href="wind.html">Wind Chill Calculator</a>
+        </nav>
+        <div id="main">
+            <form>
+                <h1>Ticket Prices</h1>
+                <p>Age group:</p>
+                <input type="radio" name="age" value="5" onclick="ageGroup()">0-5</input>
+                <input type="radio" name="age" value="student" onclick="ageGroup()">Student</input>
+                <input type="radio" name="age" value="18" onclick="ageGroup()">18-64</input>
+                <input type="radio" name="age" value="65" onclick="ageGroup()">65+</input>
+                <p>Time of Day</p>
+                <input type="radio" name="time" value="full" onclick="getTicketPrice()">Full Day<br>
+                <input type="radio" name="time" value="morning" onclick="getTicketPrice()">Morning before 12:30<br>
+                <input type="radio" name="time" value="afternoon" onclick="getTicketPrice()">After Noon<br>
+                <input type="button" value="Submit" onclick="getTotal()">
+                <p id="total"></p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <small><p>Copyright PinePeaks 2012-2017</p></small>
+    </footer>
+</div>
+</body>
+</html>

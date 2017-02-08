@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="script.js"></script>
+	<meta charset="utf-8">
+	<title>FAA Private Pilot Quiz</title>
+</head>
+<body>
+<h1>FAA Private Pilot Quiz</h1>
+<form>
+<p>1. The term "angle of attack" is defined as the angle</p>
+<p>
+	<input type="radio" name="question1" value="a" onclick="questionOne()"/>Between the wing chord line and the relative wind<br> <!-- correct answer -->
+	<input type="radio" name="question1" value="b" onclick="questionOne()"/>Between the airplane's climb angle and the horizon<br>
+	<input type="radio" name="question1" value="c" onclick="questionOne()"/>Formed by the longitudinal axis of the airplane and the chord line of the wing
+</p>
+
+<p>2. What is the purpose of the rudder on an airplane?</p>
+<p>
+	<input type="radio" name="question2" value="a" onclick="questionTwo()"/>To control roll<br>
+	<input type="radio" name="question2" value="b" onclick="questionTwo()"/>To control overbanking tendency<br>
+	<input type="radio" name="question2" value="c" onclick="questionTwo()"/>To control yaw<!-- correct answer -->
+</p>
+<p>3. An airplane said to be inherently stable will?</p>
+<p>
+	<input type="radio" name="question3" value="a" onclick="questionThree()"/>Be difficult to stall<br>
+	<input type="radio" name="question3" value="b" onclick="questionThree()"/>Require less effort to control<br><!-- correct answer -->
+	<input type="radio" name="question3" value="c" onclick="questionThree()"/>Not spin
+</p>
+<p>4. Which basic flight maneuver increases the load factor on an airplane as compared to straight-and-level flight?</p>
+<p>
+	<input type="radio" name="question4" value="a" onclick="questionFour()"/>Climbs<br>
+	<input type="radio" name="question4" value="b" onclick="questionFour()"/>Turns<br><!-- correct answer -->
+	<input type="radio" name="question4" value="c" onclick="questionFour()"/>Stalls
+</p>
+<p>5. What is one purpose of wing flaps?</p>
+<p>
+	<input type="radio" name="question5" value="a" onclick="questionFive()"/>To enable the pilot to make steeper approaches to a landing without increasing the airspeed<br><!-- correct answer -->
+	<input type="radio" name="question5" value="b" onclick="questionFive()"/>To relieve the pilot of maintaining continuous pressure on the controls<br>
+	<input type="radio" name="question5" value="c" onclick="questionFive()"/>To decrease wing area to vary the lift
+</p>
+	<input type="submit" value="Submit" onclick="isPassingGrade(); validateForm()">
+</form>
+</body>
+</html>
