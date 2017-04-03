@@ -1,0 +1,62 @@
+body {
+   width: 40%;
+   background: white;
+   margin: 0 auto;
+   font-family: Verdana, Geneva, sans-serif; 
+}
+
+main {   
+   text-align: left;
+   background: #FFDB70;
+   overflow: auto;
+}
+
+h1 {
+   font-weight: bold;
+   font-size: 24px;
+   padding: 10px;
+   background: #5472B2;
+   color: #FFFFFF;
+   text-align: center;
+}
+
+form {
+   float: left;
+   line-height: 2.1;
+}
+
+input {
+   float: left;
+   clear: left;
+   margin: 10px;
+}
+
+#sButton, #rButton {
+	color:#5472B2;
+	font-size: 1.2em;
+	float:right;
+}
+
+table {
+   float: right;
+   font-size: 18px;
+   text-align: right;
+   margin-right: 25px;
+   background: #FFDB70;  
+}
+
+table td {
+   padding: 5px 0;
+}
+
+col.label {
+   width: 175px;
+}
+
+col.amount {
+   width: 100px;
+}
+
+table tr:last-of-type {
+   font-weight: bold;
+}

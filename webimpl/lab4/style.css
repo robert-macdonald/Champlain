@@ -20,13 +20,15 @@ header{
     width: 500px;
     height: 600px;
 }
-
+a{
+    text-decoration: none;
+}
 nav{
     position: absolute;
     height: 100%;
     width: 175px;
     padding-left: 10px;
-    padding-top: 10px;
+    padding-top: 15px;
     background-color: aliceblue;
 }
 footer{
@@ -35,11 +37,11 @@ footer{
     clear: both;
     background-color: aliceblue;
 }
-.tickets{
+.tickets, .text, .time{
     float: right;
     vertical-align: top;
     display: inline-block;
     width: 50px;
     border: 0;
-    margin-right: 350px;
+    margin-right: 250px;
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Lunch Menu</title>
+   <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Lunch Selections</h1>
+  <main>
+	  <form>
+		 <input type="checkbox" name="items" id="item1" value="7.99" />
+		 <label for="item1">Fried chicken ($7.99)</label>
+		 <input type="checkbox" name="items" id="item2" value="9.99" />
+		 <label for="item2">Fried halibut ($9.99)</label>
+		 <input type="checkbox" name="items" id="item3" value="7.99" />
+		 <label for="item3">Hamburger ($7.99)</label>
+		 <input type="checkbox" name="items" id="item4" value="12.99" />
+		 <label for="item4">Grilled salmon ($12.99)</label>
+		 <input type="checkbox" name="items" id="item5" value="5.99" />
+		 <label for="item5">Side salad ($5.99)</label>
+		 <input type="reset" value="Clear All" id="rButton" />
+ 		 <input type="button" value="Calculate" id="sButton" />
+	  </form>
+	  <table>
+		 <colgroup>
+			<col class="label" />
+			<col class="amount" />
+		 </colgroup>
+		 <tbody>
+			<tr>
+			   <td>total</td>
+			   <td id="subtotal">0.00</td>
+			</tr>
+			<tr>
+			   <td>Tax</td>
+			   <td id="tax">0.00</td>
+			</tr>
+			<tr>
+			   <td>Total with tax</td>
+			   <td id="total">$0.00</td>
+			</tr>
+		 </tbody>
+	  </table>
+	</main>
+<script src="lunch.js"></script>
+</body>
+</html>

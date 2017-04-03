@@ -19,13 +19,13 @@
         </nav>
         <div id="main">
             <h1>Windchill Calculator</h1>
-            <form>
-                <p>Outside temp</p>
-                <input type="number" id="temp" value="0">
-                <p>Wind speed</p>
-                <input type="number" id="wind" value="0"><br><br>
+            <form onreset="document.getElementById('windChill').innerHTML = '';resetWind()">
+                <label>Outside temp:</label>
+                <input type="number" class="text" id="temp" value="0"><br>
+                <label>Wind speed:</label>
+                <input type="number" class="text" id="wind" value="0"><br><br>
                 <input type="button" value="Calculate" onclick="document.getElementById('windChill').innerHTML = 'Wind chill: ' + getWindChill();">
-                <input type="button" value="Reset" onclick="document.getElementById('windChill').innerHTML = '';resetWind()">
+                <input type="reset" value="Reset">
                 <p id="windChill"></p>
             </form>
         </div>

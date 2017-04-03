@@ -1,70 +1,92 @@
 /**
  * Created by robert on 2/6/17.
  */
+var ticketList = [];
 
-// Final values
-var morningS = 37;
-var fullDayS = 43;
-var afternoonS = 35;
-var morning = 54;
-var afternoon = 51;
-var fullDay = 62;
+function Ticket(type, time, amount) {
+    this.ticketType = type;
+    this.ticketTime = time;
+    this.ticketAmount = amount;
 
-//prices
-var priceM = 0;
-var priceA = 0;
-var priceF = 0;
-
-function ageGroup() {
-    var age = document.getElementsByName("age");
-    var amount = document.getElementsByName("amount");
-    for(var i = 0; i < age.length; i++){
-        if(age[i].checked){
-            if(age[i].value == "student"){
-                priceM = (morningS * amount[i].value);
-                priceA = (afternoonS * amount[i].value);
-                priceF = (fullDayS * amount[i].value);
-            }
-            if (age[i].value == "18"){
-                priceM = (morning * amount[i].value);
-                priceA = (afternoon * amount[i].value);
-                priceF = (fullDay * amount[i].value);
-            }
-            if (age[i].value == "65"){
-                priceM = (morningS * amount[i].value);
-                priceA = (afternoonS * amount[i].value);
-                priceF = (fullDayS * amount[i].value);
+    this.getPrice = function () {
+        if (this.ticketAmount > 0) {
+            if (type === "0") {
+                if (this.ticketTime === "0") {
+                    return 37 * Math.round(this.ticketAmount);
+                } else if (this.ticketTime === "1") {
+                    return 35 * Math.round(this.ticketAmount);
+                } else if (this.ticketTime === "2") {
+                    return 43 * Math.round(this.ticketAmount);
+                } else {
+                    window.alert("Invalid time");
+                    ticketList.pop();
+                }
+            } else if (this.ticketType === "1") {
+                if (this.ticketTime === "0") {
+                    return 54 * Math.round(this.ticketAmount);
+                } else if (this.ticketTime === "1") {
+                    return 51 * Math.round(this.ticketAmount);
+                } else if (this.ticketTime === "2") {
+                    return 62 * Math.round(this.ticketAmount);
+                } else {
+                    window.alert("Invalid time");
+                    ticketList.pop();
+                }
             } else {
-                priceM = 5;
-                priceA = 5;
-                priceF = 5;
+                window.alert("Invalid age");
+                ticketList.pop();
             }
+        } else {
+            window.alert("Invalid amount, input positive number.");
+            ticketList.pop();
         }
-    }
+    };
 }
-function getTicketPrice(){
-    var time = document.getElementsByName("time");
-    for(var i = 0; i < time.length; i++){
-        if(time[i].checked){
-            if (time[i].value == "morning"){
-                return priceM;
-            } else if(time[i].value == "afternoon"){
-                return priceA;
-            } else if(time[i].value == "full"){
-                return priceF;
-            }
-        }
-    }
+function createNewTicket() {
+    var time = document.getElementById("day");
+    var type = document.getElementById("age");
+    var amount = document.getElementById("quantity");
+
+    ticketList.push(new Ticket(type.value, time.value, amount.value));
 }
-function getTotal() {
-    document.getElementById("total").innerHTML = "Total: " + getTicketPrice();
+function removeTicket() {
+    ticketList.pop();
+}
+function getTotalPrice() {
+    var sum = 0;
+    var printSum = document.getElementById("total");
+    for (var index = 0; index < ticketList.length; index++) {
+        sum += ticketList[index].getPrice();
+    }
+    var tax = Math.round((0.015 * sum) * 100) / 100;
+    var totalAfterTax = sum + tax;
+    printSum.innerHTML = "Subtotal: $" + sum + "<br>" + "Tax: $" + tax + "<br>" + "Total: $" + totalAfterTax;
 }
 function getWindChill() {
     var temp = document.getElementById("temp").value;
     var windSpeed = document.getElementById("wind").value;
-    return temp - (1.5 * windSpeed);
+    if (windSpeed < 0) {
+        return "Cannot use negative numbers";
+    } else if (windSpeed > 0) {
+        return temp - (1.5 * windSpeed);
+    }
 }
 function resetWind() {
     document.getElementById("temp").value = "0";
     document.getElementById("wind").value = "0";
+}
+function resetTickets() {
+    var time = document.getElementById("day");
+    var age = document.getElementById("age");
+    var amount = document.getElementById("quantity");
+
+    time.value = 0;
+    age.value = 0;
+    amount.value = 0;
+
+    for (var i = 0; i < ticketList.length; i++) {
+        ticketList.splice(i);
+    }
+
+    document.getElementById("total").innerHTML = "";
 }

@@ -6,40 +6,42 @@
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-<div id="wrapper">
-    <header>
-        <img src="PinePeakslogo.jpg">
-    </header>
-    <main>
-        <nav>
-            <a href="index.html">Home</a><br>
-            <a href="wind.html">Wind Chill Calculator</a>
-        </nav>
-        <div id="main">
-            <form>
-                <h1>Ticket Prices</h1>
-                <p>Age group:</p>
-                <input type="checkbox" name="age" value="5" onclick="ageGroup()">0-5</input>
-                <input type="number" name="amount" class="tickets"><br>
-                <input type="checkbox" name="age" value="student" onclick="ageGroup()">Student</input>
-                <input type="number" name="amount" class="tickets"><br>
-                <input type="checkbox" name="age" value="18" onclick="ageGroup()">18-64</input>
-                <input type="number" name="amount" class="tickets"><br>
-                <input type="checkbox" name="age" value="65" onclick="ageGroup()">65+</input>
-                <input type="number" name="amount" class="tickets">
-                <p>Time of Day</p>
-                <input type="radio" name="time" value="full" onclick="getTicketPrice()">Full Day<br>
-                <input type="radio" name="time" value="morning" onclick="getTicketPrice()">Morning before 12:30<br>
-                <input type="radio" name="time" value="afternoon" onclick="getTicketPrice()">After Noon<br><br>
-                <input type="button" value="Submit" onclick="getTotal()">
-                <p id="total"></p>
-            </form>
-        </div>
-    </main>
-    <footer>
-        <small><p>Copyright PinePeaks 2012-2017</p></small>
-    </footer>
-</div>
+<body onload="getTotalPrice()">
+    <div id="wrapper">
+        <header>
+            <img src="PinePeakslogo.jpg">
+        </header>
+        <main>
+            <nav>
+                <a href="index.html">Home</a><br>
+                <a href="wind.html">Wind Chill Calculator</a>
+            </nav>
+            <div id="main">
+                <form id="ticketForm" onreset="resetTickets(); getTotalPrice()">
+                    <p>Age (0-1):</p>
+                    <input type="number" id="age" name="age" value="0" min="0" max="1"><br>
+                    <p>Qty:</p>
+                    <input type="number" id="quantity" name="quantity" value="0" min="0" max="9"><br>
+                    <p>Time (0-2):</p>
+                    <input type="number" id="day" name="day" value="0" min="0" max="2"><br><br>
+                    <input type="button" name="add" value="Add" onclick="createNewTicket(); getTotalPrice()">
+                    <input type="button" name="add" value="Remove" onclick="removeTicket(); getTotalPrice()">
+                    <input type="reset" name="add" value="Reset">
+                    <p id="total"></p>
+                </form>
+                <div id="legend">
+                    <h1>Legend</h1>
+                    <p>Kids under 5 are free!</p>
+                    <p>Age: 0 is student/senior, 1 is non student/senior</p>
+                    <p>Time: 0 is morning, 1 is afternoon, 2 is full day.</p>
+                    <p>The remove button removes the last added order.</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <small><p>Copyright PinePeaks 2012-2017</p></small>
+        </footer>
+    </div>
+
 </body>
 </html>
