@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Weight Converter</title>
+   <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+   <header>
+      <h1>
+         Converter
+      </h1>
+   </header>
+
+   <article>
+		<h2>Pounds (lb) to Kilograms (Kg) converter</h2>
+		<form>
+			<fieldset>
+				<label for="pValue">Enter weight in pounds</label>
+				<input type="number" id="pValue" />
+			</fieldset>
+			<fieldset>
+				<input type="submit" id="convertButton" value="Convert" /><br>
+				<input type="reset" id="Clear" value="Clear" />
+			</fieldset>
+			<fieldset>
+				<p>Weight in kilograms</p>
+				<p id="kValue"></p>
+			</fieldset>
+		</form>
+   </article>
+   <script src="jquery-3.1.1.js"></script>
+   <script src="convert.js"></script>
+</body>
+</html>

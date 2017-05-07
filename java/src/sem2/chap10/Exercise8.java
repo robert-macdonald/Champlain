@@ -2,25 +2,25 @@ package sem2.chap10;
 
 import java.io.*;
 
-public class Exercise7 {
+public class Exercise8 {
+
     private static FileWriter fw = null;
     private static BufferedWriter bw = null;
     private static FileReader fr = null;
     private static BufferedReader br = null;
 
     @SuppressWarnings("Duplicates")
-    public static void encryptFile(String filename) {
-
+    public static void decryptFile(String filename){
         try {
 
-            fw = new FileWriter("Encrypted.txt");
+            fw = new FileWriter("Decrypted.txt");
             bw = new BufferedWriter(fw);
 
             fr = new FileReader(filename);
             br = new BufferedReader(fr);
 
             String line;
-            String encrypted = "";
+            String decrypted = "";
 
             while ((line = br.readLine()) != null) {
                 for (int i = 0; i < line.length(); i++) {
@@ -28,15 +28,15 @@ public class Exercise7 {
                     char current = line.charAt(i);
                     int ascii = (int) current;
 
-                    ascii += 5;
+                    ascii -= 5;
 
-                    encrypted += (char) ascii;
+                    decrypted += (char) ascii;
                 }
-                bw.write(encrypted);
+                bw.write(decrypted);
                 bw.newLine();
             }
 
-            System.out.println("Encrypted the file!");
+            System.out.println("Decrypted the file!");
 
         } catch (FileNotFoundException e) {
             System.out.println("File not found: " + filename);
@@ -63,6 +63,7 @@ public class Exercise7 {
     }
 
     public static void main(String args[]) {
-        encryptFile("word.txt");
+        decryptFile("Encrypted.txt");
     }
+
 }
