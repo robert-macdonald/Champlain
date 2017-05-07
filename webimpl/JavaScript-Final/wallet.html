@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Magic Internet Money</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="css/mim-style.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a class="page-scroll" href="index.html">Welcome</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#about">About</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#download">Wallet</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Login form -->
+  <section id="login-section" class="container content-section text-center">
+    <div class="row form-container">
+      <div class="col-lg-8 col-lg-offset-2">
+        <form id="login">
+          <table>
+            <tr>
+              <th>
+                <h3>Login form</h3>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <label for="username">Username:</label>
+                <input id="username" class="login-form" type="text">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="password">Password:</label>
+                <input id="password" class="login-form" type="password">
+              </td>
+            </tr>
+          </table>
+          <button id="login-button" type="submit" class="btn btn-default btn-lg">Login</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wallet section -->
+  <section id="wallet-section" class="container content-section text-center hidden">
+    <div class="row form-container">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2>Welcome Robert!</h2>
+        <h4 id="balance">Balance: </h4>
+        <form id="send">
+          <table>
+            <tr>
+              <th>
+                <h3>How much do you wish to send?</h3>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <label for="amount">Amount:</label>
+                <input id="amount" type="number">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="recip">Recipient Username:</label>
+                <input id="recip" type="text">
+              </td>
+            </tr>
+          </table>
+          <button id="send-button" type="submit" class="btn btn-default btn-lg">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>Copyright &copy; Magic Internet Money 2017</p>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="js/mim-script.js"></script>
+
+</body>
+
+</html>
