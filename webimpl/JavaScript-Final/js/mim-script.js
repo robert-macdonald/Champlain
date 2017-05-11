@@ -1,5 +1,4 @@
-var bal = 500;
-
+var bal = 0;
 // jQuery to collapse the navbar on scroll
 function collapseNavbar() {
   if ($(".navbar").offset().top > 50) {
@@ -34,17 +33,6 @@ $('.navbar-collapse ul li a').click(function() {
   $(".navbar-collapse").collapse('hide');
 });
 
-// Login form
-$('#login').on('submit', function (event) {
-  if ($('#username').val() === "robert" && $('#password').val() === "password123"){
-    $('#login-section').addClass("hidden");
-    $('#wallet-section').removeClass("hidden");
-  } else {
-    alert("Invalid login");
-  }
-  event.preventDefault();
-});
-
 // Sending money from user to user
 $('#send').on('submit', function (event) {
   var amount = $('#amount').val();
@@ -56,4 +44,69 @@ $('#send').on('submit', function (event) {
     alert('Insufficient funds' + amount);
   }
   event.preventDefault();
+});
+
+// Login form with ajax
+$('#login').on('submit', function (e) {
+  $.ajax({
+    dataType: "json",
+    type: "GET",
+    url: 'https://api.myjson.com/bins/1gr2p5',
+    success: function (responseObject) {
+      $.each(responseObject, function (index, data) {
+        $.each(data, function (index, users) {
+          if (users.username == $('#username').val()){
+            if (users.password == $('#password').val()){
+              $('#login-section').addClass("hidden");
+              $('#wallet-section').removeClass("hidden");
+              bal = users.balance;
+              $('#balance').text('Balance: ' + bal);
+            } else {
+              alert('invalid login');
+            }
+          } else {
+            alert('invalid login');
+          }
+        });
+      });
+    }
+  });
+  e.preventDefault();
+});
+
+// Create new account with ajax and php
+$('#create-button').on('click', function (e) {
+
+  var exists = false;
+
+  $.ajax({
+    dataType: "json",
+    type: "GET",
+    url: 'https://api.myjson.com/bins/1gr2p5',
+    success: function (responseObject) {
+      $.each(responseObject.data, function (index, users) {
+        if (users.username == $('#username').val()){
+          alert('Username already taken');
+          exists = true;
+        }
+      });
+    }
+  });
+
+    if (exists == false){
+      var user = {
+        username: $('#username').val(),
+        password: $('#password').val(),
+        balance: 0
+      }
+    }
+
+  $.ajax({
+    type : "POST",
+    url : "json.php",
+    data : {
+        json : JSON.stringify(user)
+    }
+  });
+  e.preventDefault();
 });

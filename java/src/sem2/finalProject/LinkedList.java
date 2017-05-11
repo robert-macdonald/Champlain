@@ -56,6 +56,29 @@ public class LinkedList {
         }
     }
 
+    public void removeIndex(int index){
+        if (index < size && index >= 0) {
+            if (index == 0){
+                first = first.next;
+                size--;
+            } else {
+                Node pointer = first;
+                int counter = 0;
+                while (pointer.next != null){
+                    if ((counter - index) == -1){
+                        pointer.next = pointer.next.next;
+                        break;
+                    } else {
+                        pointer = pointer.next;
+                        counter++;
+                    }
+                }
+            }
+        } else {
+            throw new IndexOutOfBoundsException("Index out of bounds!");
+        }
+    }
+
     public boolean find(String n){
         boolean result = false;
         for (Node i = first; i != null; i = i.next){
@@ -126,7 +149,7 @@ public class LinkedList {
         StringBuilder output = new StringBuilder();
         Node pointer = first;
         while (pointer != null){
-            output.append(pointer.name + ", ");
+            output.append(pointer.name + "\n");
             pointer = pointer.next;
         }
         return output.toString();
